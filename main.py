@@ -34,4 +34,19 @@ class Cat:
 
 cat = Cat("Борис", 2, "Темний")
 
+while True:
+    cat.check_status()
+    action = input(cat.name + " хоче (eat/sleep/play/quit) ")
+    if action == "eat":
+        cat.eat()
+    elif action == "sleep":
+        cat.sleep()
+    elif action == "play":
+        cat.play()
+    elif action == "quit":
+        break
+    else:
+        print("Не пиши дурниць.")
+    time.sleep(1)
+
   
