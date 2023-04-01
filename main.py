@@ -20,5 +20,18 @@ class Cat:
         self.hunger += 5
         self.mood += 10
         print(self.name + " :Я добряче поспав.")
+      
+     def play(self):
+        self.energy -= 10
+        self.hunger += 5
+        self.mood += 15
+        print(self.name + " :Я пограв.")
+
+    def check_status(self):
+        print("Hunger: " + str(self.hunger))
+        print("Energy: " + str(self.energy))
+        print("Mood: " + str(self.mood))
+
+cat = Cat("Борис", 2, "Темний")
 
   
